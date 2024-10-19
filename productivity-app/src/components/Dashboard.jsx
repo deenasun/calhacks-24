@@ -4,9 +4,9 @@ import ProjectsFeed from "./ProjectsFeed";
 export default function Dashboard() {
   return (
     <DashboardContextProvider>
-    <div className="w-full grid grid-cols-[1fr_1fr] gap-4">
-      <div className='border-1 border-black'><ProjectsFeed /></div>
-    </div>
+      <div className="w-full flex flex-row flex-1 gap-4">
+        <ProjectsFeed />
+      </div>
     </DashboardContextProvider>
   );
 }

@@ -1,4 +1,8 @@
+'use client'
+
+import Breadcrumbs from '@/components/Breadcrumbs'
 import { useParams } from 'next/navigation'
+import '@/styles/styles.css'
 
 export default function Page() {
 
@@ -6,7 +10,8 @@ export default function Page() {
     console.log(id)
 
     return (
-        <div>
+        <div className='container'>
+            <Breadcrumbs />
             <h1>Project Page</h1>
         </div>
     )
