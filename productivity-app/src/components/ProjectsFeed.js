@@ -20,6 +20,8 @@ export default function ProjectsFeed() {
     return (
         <div className="flex flex-col gap-2 overflow-y-auto">
             <div>Projects</div>
+            <div className="grid grid-cols-3 gap-x-4 gap-y-2 overflow-y-auto">
+
             {projectArray.map((project) => (
                 <div
                     className={`${project.name == selectedProject?.name ? 'bg-[#f2f2f2]' : ''} p-2 border border-grey rounded-sm text-[0.875rem] hover:bg-[#f2f2f2] cursor-pointer`}
@@ -28,6 +30,7 @@ export default function ProjectsFeed() {
                     {project.name}
                 </div>
             ))}
+            </div>
         </div>
     );
 }
