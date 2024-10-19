@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import Dashboard from "@/components/Dashboard";
+import '@/styles/styles.css'
 
 export default function Home() {
 
   return(
     <div>
-      <main className='flex flex-col gap-8 items-start p-8 font-[family-name:var(--font-geist-mono)]'>
+      <main className='main'>
       <Header />
       <Dashboard />
       </main>

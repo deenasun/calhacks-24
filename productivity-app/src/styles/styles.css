@@ -4,8 +4,18 @@ body {
   font-family: 'Geist Mono', monospace;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
+.main {
+    margin: 1rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }

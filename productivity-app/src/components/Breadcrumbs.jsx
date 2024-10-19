@@ -13,7 +13,7 @@ export default function Breadcrumbs() {
     breadcrumbs.push(...constructBreadcrumbsFromParams())
 
     return (
-        <div className='flex flex-row'>
+        <div className='flex flex-row h-[40px] items-center'>
             {breadcrumbs.map((breadcrumb) => {
                 const index = breadcrumbs.indexOf(breadcrumb)
                 console.log(index)
@@ -62,7 +62,7 @@ export function Breadcrumb({ key, text, path }) {
 
     return (
         <Link href={path} className='mr-2 hover:underline hover:underline-offset-4'>
-            {text}
+            <span className='font-semibold'>{text}</span>
         </Link>
     )
 }
